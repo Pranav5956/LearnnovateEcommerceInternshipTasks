@@ -1,5 +1,5 @@
 const addCountriesToSelect = () => {
-  fetch("/js/countries.json")
+  fetch("./js/countries.json")
     .then((res) => res.json())
     .then((countries) => {
       for (let country in countries) {

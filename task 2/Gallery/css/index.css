@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.gallery {
+  width: 80vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 0 10vw;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-image img {
+  width: 120%;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  transition: all 0.3s ease-in-out;
+  filter: grayscale(0.9);
+  cursor: pointer;
+}
+
+.gallery-image:hover img {
+  width: 100%;
+  top: 0;
+  left: 0;
+  filter: grayscale(0);
+}
+
+.gallery-image figcaption {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  color: black;
+  background-color: white;
+  transition: bottom 0.3s ease-in-out 0.2s;
+  padding: 3px 10px;
+  border-radius: 1em;
+  margin: 2px;
+  font-size: 0.9rem;
+}
+
+.gallery-image figcaption a {
+  color: black;
+  font-weight: bold;
+}
+
+.gallery-image:hover figcaption {
+  bottom: 0;
+}
+
+.modal-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.modal-content {
+  width: 40vw;
+}
+
+.cropper {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  margin: 0.5rem 1rem;
+}
+
+.modal-info {
+  text-align: left;
+}
+
+.cropper img {
+  height: 100%;
+  position: absolute;
+  left: -25%;
+}
+
+.modal-name {
+  margin-bottom: 0;
+}
+
+.modal-phone {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.modal-email {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.modal-phone span, .modal-email span {
+  margin-left: 0.5rem;
+}

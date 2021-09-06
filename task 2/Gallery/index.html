@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | by Pranav Balaji</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="modalTitle"></h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-details">
+            <div class="modal-profile">
+              <div class="cropper">
+                <img src="" alt="">
+              </div>
+            </div>
+            <div class="modal-info">
+              <h5 class="modal-name"></h5>
+              <small class="modal-address"></small>
+              <p class="modal-phone">
+                <i class="fa fa-phone-alt fa-fw"></i>
+                <span></span>
+              </p>
+              <p class="modal-email">
+                <i class="fa fa-envelope fa-fw"></i>
+                <span></span>
+              </p>
+            </div>
+          </div>
+          <small class="text-danger mb-1 ml-2">The information displayed is fake and resemblance to any person in
+            real life is purely coincidental.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="gallery" role="grid">
+    <figure class="gallery-image" role="gridcell" id="image-1">
+      <img src="./assets/img/christopher-campbell.jpg">
+      <figcaption>
+        Photo by <a
+          href="https://unsplash.com/@chrisjoelcampbell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christopher
+          Campbell</a> on <a
+          href="https://unsplash.com/s/photos/person?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </figcaption>
+    </figure>
+    <figure class="gallery-image" role="gridcell" id="image-2">
+      <img src="./assets/img/ethan-hoover.jpg">
+      <figcaption>
+        Photo by <a
+          href="https://unsplash.com/@ethanchoover?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ethan
+          Hoover</a> on <a
+          href="https://unsplash.com/s/photos/person?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </figcaption>
+    </figure>
+    <figure class="gallery-image" role="gridcell" id="image-3">
+      <img src="./assets/img/jakob-owens.jpg">
+      <figcaption>
+        Photo by <a
+          href="https://unsplash.com/@jakobowens1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jakob
+          Owens</a> on <a
+          href="https://unsplash.com/s/photos/person?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </figcaption>
+    </figure>
+    <figure class="gallery-image" role="gridcell" id="image-4">
+      <img src="./assets/img/jonas-kakaroto.jpg">
+      <figcaption>
+        Photo by <a
+          href="https://unsplash.com/@jkakaroto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jonas
+          Kakaroto</a> on <a
+          href="https://unsplash.com/s/photos/person?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </figcaption>
+    </figure>
+    <figure class="gallery-image" role="gridcell" id="image-5">
+      <img src="./assets/img/kelly-sikkema.jpg">
+      <figcaption>
+        Photo by <a
+          href="https://unsplash.com/@kellysikkema?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kelly
+          Sikkema</a> on <a
+          href="https://unsplash.com/s/photos/person?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </figcaption>
+    </figure>
+    <figure class="gallery-image" role="gridcell" id="image-6">
+      <img src="./assets/img/max-ilienerwise.jpg">
+      <figcaption>
+        Photo by <a
+          href="https://unsplash.com/@ilienerwise?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Max
+          Ilienerwise</a> on <a
+          href="https://unsplash.com/s/photos/person?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </figcaption>
+    </figure>
+    <figure class="gallery-image" role="gridcell" id="image-7">
+      <img src="./assets/img/mubariz-mehdizadeh.jpg">
+      <figcaption>
+        Photo by <a
+          href="https://unsplash.com/@mehdizadeh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mubariz
+          Mehdizadeh</a> on <a
+          href="https://unsplash.com/s/photos/person?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </figcaption>
+    </figure>
+    <figure class="gallery-image" role="gridcell" id="image-8">
+      <img src="./assets/img/mike-austin.jpg">
+      <figcaption>
+        Photo by <a
+          href="https://unsplash.com/@mikeaustin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mike
+          Austin</a> on <a
+          href="https://unsplash.com/s/photos/person?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </figcaption>
+    </figure>
+    <figure class="gallery-image" role="gridcell" id="image-9">
+      <img src="./assets/img/raj-rana.jpg">
+      <figcaption>
+        Photo by <a
+          href="https://unsplash.com/@theranaman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Raj
+          Rana</a> on <a
+          href="https://unsplash.com/s/photos/person?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </figcaption>
+    </figure>
+  </main>
+
+  <!-- Bootstrap JS CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
